@@ -4,6 +4,5 @@ Primer repo de la semana tec 2
 
 # Miembros del equipo:
 
-
-
-Gianluca Beltran Bianchi
+Gianluca Beltran Bianchi - A01029098
+María de los Ángeles Garay Pizano - A01025416
