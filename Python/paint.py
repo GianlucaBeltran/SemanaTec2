@@ -1,4 +1,6 @@
 """Paint, for drawing shapes.
+Equipo 1:
+Gianluca Beltran Bianchi
 
 Exercises
 
@@ -35,8 +37,14 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    pass  # TODO
-
+    up()
+    goto(end.x, end.y)
+    down()
+    for count in range(100):
+        forward(end.x - start.x)
+        left(3.6)
+   
+    
 def rectangle(start, end):
     "Draw rectangle from start to end."
     pass  # TODO
