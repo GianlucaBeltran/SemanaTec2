@@ -1,8 +1,7 @@
 """Paint, for drawing shapes.
 Equipo 1:
+Daniel Alejandro Sánchez Martinez
 Gianluca Beltran Bianchi
-
-
 María de los Ángeles Garay Pizano
 
 Exercises
@@ -50,7 +49,21 @@ def circle(start, end):
     
 def rectangle(start, end):
     "Draw rectangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    
+    forward(end.x - start.x)
+    left(90)
+    forward((end.x - start.x) * 0.5)
+    left(90)
+    forward(end.x - start.x)
+    left(90)
+    forward((end.x - start.x) * 0.5)
+
+    end_fill()
 
 def triangle(start, end):
     "Draw triangle from start to end."
