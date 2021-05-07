@@ -1,6 +1,6 @@
 """Cannon, hitting targets with projectiles.
-Daniel Alejandro Sanchez Martinez
 
+Daniel Alejandro Sanchez Martinez - A01029120
 Gianluca Beltran Bianchi - A01029098
 
 Exercises
