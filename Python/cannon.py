@@ -59,7 +59,7 @@ def move():
     # Move the cannon shot
     if inside(ball):
         speed.y -= 0.35
-        ball.move(speed)
+        ball.move(speed+8)
 
     # Make a copy of the existing target list before redrawing
     dupe = targets.copy()
