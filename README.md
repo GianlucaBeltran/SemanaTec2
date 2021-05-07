@@ -10,7 +10,7 @@ Daniel Alejandro Sánchez Martinez - A01029120\
 
 We implemented some of the functions on paint.py and cannon.py and used github to learn about branches and version control.
 
-#Cambios:
+# Cambios:
 
 Paint:
 	- Implemented Circle Function - Gianluca Beltran
