@@ -20,4 +20,5 @@ Paint:
 
 Cannon:
 - Implemented target counter and changed bullet gravity - Gianluca Beltran
-- Implemented taregt gravity - Daniel Alejandro
+- Implemented target gravity - Daniel Alejandro
+- Changed target velocity - Ángeles Garay
