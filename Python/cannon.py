@@ -1,5 +1,6 @@
 """Cannon, hitting targets with projectiles.
 
+María de los Ángeles Garay Pizano a01025416 
 Daniel Alejandro Sanchez Martinez - A01029120
 Gianluca Beltran Bianchi - A01029098
 
@@ -63,8 +64,9 @@ def move():
 
     # Move the cannon shot
     if inside(ball):
-        speed.y -= 0 # changed gravity to zero
-        ball.move(speed)
+
+        speed.y -= 0 # changed gravity to zeroz
+        ball.move(speed+8)
 
     # Make a copy of the existing target list before redrawing
     dupe = targets.copy()
