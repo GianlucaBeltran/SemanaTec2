@@ -1,5 +1,7 @@
 """Cannon, hitting targets with projectiles.
 
+Gianluca Beltran Bianchi - A01029098
+
 Exercises
 
 1. Keep score by counting target hits.
@@ -13,6 +15,7 @@ from random import randrange
 from turtle import *
 from freegames import vector
 
+target_count = 0
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
@@ -45,6 +48,7 @@ def draw():
 
 def move():
     "Move ball and targets."
+    global target_count
     # Generate a new target at random times
     if randrange(40) == 0:
         y = randrange(-150, 150)
@@ -57,7 +61,7 @@ def move():
 
     # Move the cannon shot
     if inside(ball):
-        speed.y -= 0.35
+        speed.y -= 0 # changed gravity to zero
         ball.move(speed)
 
     # Make a copy of the existing target list before redrawing
@@ -66,9 +70,13 @@ def move():
 
     # Detect if the bullet hits a target
     for target in dupe:
+        # print(target, ball)
         if abs(target - ball) > 13:
             targets.append(target)
-
+        else:
+            target_count += 1
+        
+    # print(target_count)
     draw()
 
     # Detect when a target reaches the left side
@@ -86,3 +94,4 @@ tracer(False)
 onscreenclick(tap)
 move()
 done()
+
